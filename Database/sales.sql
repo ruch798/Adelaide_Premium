@@ -1,3 +1,15 @@
+CREATE TABLE "sales" (
+"sales_id" INTEGER,
+"order_id" INTEGER,
+"product_id" INTEGER,
+"price_per_unit" INTEGER,
+"quantity" INTEGER,
+"total_price" INTEGER,
+FOREIGN KEY("product_id") REFERENCES "products"("product_id"),
+FOREIGN KEY("order_id") REFERENCES "orders"("order_id"),
+PRIMARY KEY("sales_id")
+);
+
 INSERT INTO sales(sales_id,order_id,product_id,price_per_unit,quantity,total_price) VALUES (0,1,218,106,2,212);
 INSERT INTO sales(sales_id,order_id,product_id,price_per_unit,quantity,total_price) VALUES (1,1,481,118,1,118);
 INSERT INTO sales(sales_id,order_id,product_id,price_per_unit,quantity,total_price) VALUES (2,1,2,96,3,288);
