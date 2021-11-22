@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #ccedfd;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adelaidepremium.MainController">
+         <children>
+                  <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../menu.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="63.0" layoutY="-113.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0">
+                      <children>
+                        <GridPane prefHeight="300.0" prefWidth="1000.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="359.0" minWidth="10.0" prefWidth="348.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="142.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="515.0" minWidth="10.0" prefWidth="502.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="415.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="804.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="876.0" minHeight="0.0" prefHeight="741.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="313.0" minHeight="0.0" prefHeight="135.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#browseCatalogueAction" text="Browse Catalogue">
+                                 <GridPane.margin>
+                                    <Insets left="225.0" top="300.0" />
+                                 </GridPane.margin>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#generateRandomCatalogueAction" text="Generate Random Catalogue" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets top="300.0" />
+                                 </GridPane.margin>
+                              </Button>
+                                  <Button mnemonicParsing="false" onAction="#salesAction" text="Place Order" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="250.0" top="550.0" />
+                                 </GridPane.margin>
+                                  </Button>
+                                  <Button mnemonicParsing="false" onAction="#reportsAction" text="Reports" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" top="550.0" />
+                     </GridPane.margin>
+                                  </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="300.0" />
+                           </VBox.margin>
+                        </GridPane>
+                      </children>
+                  </VBox>
+                  <Button layoutX="430.0" layoutY="567.0" mnemonicParsing="false" onAction="#updateStockQuantityAction" prefWidth="141.0" text="Update Stock Quantity" />
+         </children>
+      </AnchorPane>
