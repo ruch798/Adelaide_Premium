@@ -1,0 +1,16 @@
+Product ID      Product Type    Product Name         Size            Colour          Price (AUD)    
+749             Jacket          Peacoat              XL              yellow          91             
+534             Jacket          Leather              XL              orange          101            
+794             Jacket          Pullover             XL              blue            102            
+337             Shirt           Mandarin Collar      M               blue            97             
+535             Jacket          Leather              XS              yellow          101            
+569             Jacket          Bomber               XL              orange          81             
+828             Jacket          Shearling            L               blue            85             
+709             Jacket          Trench Coat          XL              orange          100            
+507             Jacket          Windbreaker          M               green           98             
+972             Trousers        Slim-Fit             M               indigo          107            
+73              Shirt           Flannel              L               red             86             
+728             Jacket          Trench Coat          L               indigo          100            
+821             Jacket          Shearling            S               green           85             
+1001            Trousers        Wool                 S               blue            99             
+935             Trousers        Drawstring           XS              indigo          93             

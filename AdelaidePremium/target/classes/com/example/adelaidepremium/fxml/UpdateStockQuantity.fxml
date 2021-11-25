@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" style="-fx-background-color: #ccedfd;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.adelaidepremium.controller.UpdateStockQuantityController">
+    <children>
+        <HBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="1000.0" styleClass="header" VBox.vgrow="NEVER">
+            <children>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="80.0" HBox.hgrow="NEVER">
+                    <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#goBack" text="Back">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </HBox>
+        <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="760.0" VBox.vgrow="ALWAYS">
+            <children>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="109.0" styleClass="product-vbox">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label alignment="BASELINE_LEFT" text="Product Name">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Type">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Size">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Colour">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Price">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Quantity">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Description">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="302.0" styleClass="product-vbox">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="5.0" top="10.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="productNameField">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productTypeField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productSizeField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productColourField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productPriceField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productQuantityField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productDescriptionField">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="addProductButton" mnemonicParsing="false" onAction="#onAddProductButtonClick" text="Add Product">
+                     <VBox.margin>
+                        <Insets left="200.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="535.0" prefWidth="180.0">
+               <children>
+                  <Label alignment="BASELINE_LEFT" prefHeight="17.0" prefWidth="65.0" text="Product ID" textAlignment="RIGHT">
+                     <VBox.margin>
+                        <Insets left="100.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" text="Quantity">
+                     <VBox.margin>
+                        <Insets left="100.0" top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="535.0" prefWidth="391.0">
+               <children>
+                  <TextField fx:id="productID2Field" prefHeight="26.0" prefWidth="399.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="productQuantity2Field">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Button fx:id="addNewStockQuantityButton" mnemonicParsing="false" onAction="#onAddQuantityButtonClick" text="Add New Stock Quantity">
+                     <VBox.margin>
+                        <Insets left="230.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            </children></HBox>
+    </children>
+</VBox>

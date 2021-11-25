@@ -1,0 +1,16 @@
+Product ID      Product Type    Product Name         Size            Colour          Price (AUD)    
+755             Jacket          Peacoat              XS              blue            91             
+49              Shirt           Dress                XL              yellow          107            
+137             Shirt           Denim                M               violet          103            
+821             Jacket          Shearling            S               green           85             
+744             Jacket          Peacoat              XL              orange          91             
+518             Jacket          Windbreaker          L               indigo          98             
+97              Shirt           Flannel              M               indigo          86             
+978             Trousers        Slim-Fit             L               violet          107            
+1091            Trousers        Cropped              S               orange          89             
+1015            Trousers        Relaxed Leg          XS              red             85             
+386             Shirt           Casual Slim Fit      S               red             101            
+502             Jacket          Windbreaker          M               yellow          98             
+353             Shirt           Henley               L               red             82             
+761             Jacket          Peacoat              S               indigo          91             
+351             Shirt           Henley               S               red             82             
