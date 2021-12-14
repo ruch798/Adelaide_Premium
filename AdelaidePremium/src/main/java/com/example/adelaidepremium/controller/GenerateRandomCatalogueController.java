@@ -137,9 +137,9 @@ public class GenerateRandomCatalogueController implements Initializable, Product
   private void onSendCatalogueButtonClick() {
     writeToFile();
     // Recipient's email ID
-    String to = "rsbhatia@andrew.cmu.edu";
+    String to = "RECIPIENT EMAIL ID";
     // Sender's email ID
-    String from = "adelaide.premium7@gmail.com";
+    String from = "SENDER EMAIL ID";
     String host = "smtp.gmail.com";
 
     // Get system properties
@@ -158,7 +158,7 @@ public class GenerateRandomCatalogueController implements Initializable, Product
             new javax.mail.Authenticator() {
 
               protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication(from, "adelaide2021");
+                return new PasswordAuthentication(from, "PASSWORD");
               }
             });
 
